@@ -1,16 +1,18 @@
 import tkinter 
 from tkinter.constants import END
-import math
+
+from tkinter.font import Font
 
 
-wd=9
+
+wd=10
 hg=5
 i=0
 
 ventana = tkinter.Tk()
-ventana.geometry("416x400")
+ventana.geometry("420x410")
 ventana.title("Calculator")
-ventana.iconbitmap("icono.ico")
+ventana.iconbitmap("Calc.ico")
 ventana.config(bg="sandy brown")
 
 
@@ -30,34 +32,34 @@ def hacer_operacion():
     Input.insert(0,Resultado)
     i=0
 
-
+fontStyle = Font(family="Bahnschrift SemiCondensed", size=10)
 
 Input=tkinter.Entry(ventana,width=20)
-nu1=tkinter.Button(ventana,text="1",width=wd,height=hg,bg="DodgerBlue4",command=lambda: nv1(1))
-nu2=tkinter.Button(ventana,text="2",width=wd,height=hg,command=lambda: nv1(2),bg="DodgerBlue4")
-nu3=tkinter.Button(ventana,text="3",width=wd,height=hg,command=lambda: nv1(3),bg="DodgerBlue4")
-nu4=tkinter.Button(ventana,text="4",width=wd,height=hg,command=lambda: nv1(4),bg="DodgerBlue4")
-nu5=tkinter.Button(ventana,text="5",width=wd,height=hg,command=lambda: nv1(5),bg="DodgerBlue4")
-nu6=tkinter.Button(ventana,text="6",width=wd,height=hg,command=lambda: nv1(6),bg="DodgerBlue4")
-nu7=tkinter.Button(ventana,text="7",width=wd,height=hg,command=lambda: nv1(7),bg="DodgerBlue4")
-nu8=tkinter.Button(ventana,text="8",width=wd,height=hg,command=lambda: nv1(8),bg="DodgerBlue4")
-nu9=tkinter.Button(ventana,text="9",width=wd,height=hg,command=lambda: nv1(9),bg="DodgerBlue4")
-nu0=tkinter.Button(ventana,text="0",width=wd,height=hg,command=lambda: nv1(0),bg="DodgerBlue4")
+nu1=tkinter.Button(ventana,text="1",width=wd,height=hg,bg="deep sky blue",command=lambda: nv1(1),font=fontStyle)
+nu2=tkinter.Button(ventana,text="2",width=wd,height=hg,command=lambda: nv1(2),bg="deep sky blue",font=fontStyle)
+nu3=tkinter.Button(ventana,text="3",width=wd,height=hg,command=lambda: nv1(3),bg="deep sky blue",font=fontStyle)
+nu4=tkinter.Button(ventana,text="4",width=wd,height=hg,command=lambda: nv1(4),bg="deep sky blue",font=fontStyle)
+nu5=tkinter.Button(ventana,text="5",width=wd,height=hg,command=lambda: nv1(5),bg="deep sky blue",font=fontStyle)
+nu6=tkinter.Button(ventana,text="6",width=wd,height=hg,command=lambda: nv1(6),bg="deep sky blue",font=fontStyle)
+nu7=tkinter.Button(ventana,text="7",width=wd,height=hg,command=lambda: nv1(7),bg="deep sky blue",font=fontStyle)
+nu8=tkinter.Button(ventana,text="8",width=wd,height=hg,command=lambda: nv1(8),bg="deep sky blue",font=fontStyle)
+nu9=tkinter.Button(ventana,text="9",width=wd,height=hg,command=lambda: nv1(9),bg="deep sky blue",font=fontStyle)
+nu0=tkinter.Button(ventana,text="0",width=wd,height=hg,command=lambda: nv1(0),bg="deep sky blue",font=fontStyle)
 
 
 #config=tkinter.Button(ventana,text="Configurar",width=wd,height=2,bg="honeydew2",command=configurar)    
 
-Igual=tkinter.Button(ventana,text="=",width=wd,height=hg,bg="honeydew2",command=lambda: hacer_operacion())
-suma=tkinter.Button(ventana,text="+",width=wd,height=hg,command=lambda: nv1("+"),bg="ivory4")
-resta=tkinter.Button(ventana,text="-",width=wd,height=hg,command=lambda: nv1("-"),bg="ivory4")
-mult=tkinter.Button(ventana,text="x",width=wd,height=hg,command=lambda: nv1("*"),bg="ivory4")
-div=tkinter.Button(ventana,text="÷",width=wd,height=hg,command=lambda: nv1("/"),bg="ivory4")
-delete=tkinter.Button(ventana,width=wd,height=hg,command=borrar,text="AC",bg="honeydew2")
-elv2=tkinter.Button(ventana,text="x²",width=wd,height=hg,command=lambda: nv1("**2"),bg="salmon4")
-elvx=tkinter.Button(ventana,text="^",width=wd,height=hg,command=lambda: nv1("**"),bg="salmon4")
-raizc=tkinter.Button(ventana,text="2√",width=wd,height=hg,command=lambda: nv1("**0.5"),bg="salmon4")
+Igual=tkinter.Button(ventana,text="=",width=wd,height=hg,bg="honeydew2",command=lambda: hacer_operacion(),font=fontStyle)
+suma=tkinter.Button(ventana,text="+",width=wd,height=hg,command=lambda: nv1("+"),bg="green yellow",font=fontStyle)
+resta=tkinter.Button(ventana,text="-",width=wd,height=hg,command=lambda: nv1("-"),bg="green yellow",font=fontStyle)
+mult=tkinter.Button(ventana,text="x",width=wd,height=hg,command=lambda: nv1("*"),bg="green yellow",font=fontStyle)
+div=tkinter.Button(ventana,text="÷",width=wd,height=hg,command=lambda: nv1("/"),bg="green yellow",font=fontStyle)
+delete=tkinter.Button(ventana,width=wd,height=hg,command=borrar,text="AC",bg="honeydew2",font=fontStyle)
+elv2=tkinter.Button(ventana,text="x²",width=wd,height=hg,command=lambda: nv1("**2"),bg="salmon4",font=fontStyle,fg="gray99")
+elvx=tkinter.Button(ventana,text="^",width=wd,height=hg,command=lambda: nv1("**"),bg="salmon4",font=fontStyle,fg="gray99")
+raizc=tkinter.Button(ventana,text="2√",width=wd,height=hg,command=lambda: nv1("**0.5"),bg="salmon4",font=fontStyle,fg="gray99")
 #raiz3=tkinter.Button(ventana,text="3√",width=wd,height=hg,command=lambda: nv1("**0.333"))
-pi=tkinter.Button(ventana,text="π",width=wd,height=hg,command=lambda: nv1("3.141592"),bg="salmon4")
+pi=tkinter.Button(ventana,text="π",width=wd,height=hg,command=lambda: nv1("3.141592"),bg="salmon4",font=fontStyle,fg="gray99")
 
 Input.grid(row=1,column=5)
 #config.grid(row=1,column=1)
