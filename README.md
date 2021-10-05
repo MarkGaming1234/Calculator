@@ -23,7 +23,9 @@ Instrucciones de Descarga e Instalacion:
 Instrucciones de Actualizacion:
 
 1.Descargar estos archivos para ello busca en este repositorio el boton CODE, de color verde y descargarlo en ZIP
+
 2.Extraer el ZIP y trasladar los archivos index.py y Calc.ico a la carperta donde tenias la version antigua de la calculadora
+
 3.El sistema te pedira confirmar si quieres remplazar los archivos, pulsa en la primera opcion
 
 Disfruten
