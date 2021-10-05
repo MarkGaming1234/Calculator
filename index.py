@@ -12,7 +12,7 @@ i=0
 ventana = tkinter.Tk()
 ventana.geometry("420x410")
 ventana.title("Calculator")
-ventana.iconbitmap("Calc.ico")
+#ventana.iconbitmap("Calc.ico")
 ventana.config(bg="sandy brown")
 
 
