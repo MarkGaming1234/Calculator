@@ -2,6 +2,7 @@
 
 
 ------------------------------------------------------Español------------------------------------------------------
+
 Hola esta es una calculadora diseñada con python y de momento en fase de pruebas, me gustaria que dieseis vuestra opinion sobre esta applicacion, lo agradezco. 
 
 Caracteristicas
@@ -49,7 +50,9 @@ Download and Installation Instructions:
 Update Instructions:
 
 1.Download these files for this, look in this repository for the CODE button, green and download it in ZIP
+
 2.Extract the ZIP and move the index.py and Calc.ico files to the folder where you had the old version of the calculator
+
 3.The system will ask you to confirm if you want to replace the files, click on the first option
 
 Enjoy
